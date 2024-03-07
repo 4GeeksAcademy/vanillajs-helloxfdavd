@@ -13,14 +13,35 @@ window.onload = () => {
 };*/
   //write your code here
 
-  let pronoun = ["the", "our"];
-  let adj = ["great", "big"];
-  let noun = ["jogger", "racoon"];
-
+  let pronoun = ["el", "la", "vuestro", "le", "lo", "su"];
+  let adj = [
+    "maravilos@",
+    "gran",
+    "magnific@",
+    "enorme",
+    "esperad@",
+    "desead@"
+  ];
+  let noun = [
+    "juerga",
+    "boda",
+    "dominatrix",
+    "factorydevelopers",
+    "semillerohackers",
+    "loshijosdeVeroyNoé"
+  ];
+  let extension = [".es", ".com", ".org", ".so", ".eu", ".uk"];
   for (let pronombre in pronoun) {
     for (let adjetivo in adj) {
       for (let nombre in noun) {
-        console.log(pronoun[pronombre] + adj[adjetivo] + noun[nombre]);
+        for (let extenxion in extension) {
+          console.log(
+            pronoun[pronombre] +
+              adj[adjetivo] +
+              noun[nombre] +
+              extension[extenxion]
+          );
+        }
       }
     }
   }
